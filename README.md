@@ -8,7 +8,7 @@ Flappy-Bird
 
 ## Description Of The Project
 
-A game created by c# language and Visual Studio IDE. this project is created with ".net desktop development" framework.
+A game created by C# language and Visual Studio IDE. this project is created with ".net desktop development" framework.
 
 ### Design
 Design is easily created with the help of "Windows Form App" template. Below you can see we have a toolbox where we take the tools we need in order to design our game.
@@ -20,6 +20,7 @@ Design is easily created with the help of "Windows Form App" template. Below you
 ### Functionality
 
 Below you can see some methods which helps us to give rules for our game. For example, gameTimerEvent() function will help us to move our pipes while we play also helps us to determine when to end game. If our bird's border crosses any of the pipe's border or ground's border our program will call endGame() method where the program stops the timer to finish the game.
+We have some attributes like: pipeSpeed, gravity, score. score attribute is used inside a function in order to increase the score of the game when a pipe is passed, pipeSpeed is increased with increasing score in order to make the game harder. Finally gravity attribute is used inside gameKeysUp() & gameKeysDown() functions where we decide when and how the bird moves whenever we press the space keyword.
 
 <img src="https://user-images.githubusercontent.com/64264345/161953671-c3ca58f3-6bb9-44c4-900f-603b2d452027.jpeg" width="400">    <img src="https://user-images.githubusercontent.com/64264345/161953664-32eb4841-6e5c-4c0e-992d-8806b5d95ad5.jpeg" width="420">
 
