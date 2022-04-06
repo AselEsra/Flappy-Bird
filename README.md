@@ -8,7 +8,7 @@ Flappy-Bird
 
 ## Description Of The Project
 
-A game created by C# language and Visual Studio IDE. this project is created with ".net desktop development" framework.
+A game created with C# language and Visual Studio IDE. I have created it with ".net desktop development" framework. The game is called "Flappy Bird" where you can press space key to fly the bird. When you crash the bird the game finishes aoutomatically and prints out "Game Over!" text with your score that you have gained throughout the game.
 
 ### Design
 Design is easily created with the help of "Windows Form App" template. Below you can see we have a toolbox where we take the tools we need in order to design our game.
