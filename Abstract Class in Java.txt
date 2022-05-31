@@ -1,0 +1,154 @@
+::1:: What is an abstract class?
+{~An abstract class is one without any child classes.
+ ~An abstract class is any parent class with more than one child class.
+ =An abstract class is a class which has at least one abstract method which cannot be instantiated.
+ ~Is a "base class".}
+
+
+::2:: Can you identify the error in the below code?
+abstract class AbstractClass
+\{
+  private abstract int abstractMethod();
+\}
+{~Abstract classes can’t have AbstractClass as a name.
+ =Abstract methods can’t be private.
+ ~Abstract methods can’t have abstractMethod as a name.
+ ~Abstract methods can’t have empty body.}
+
+
+::3:: Does a subclass that extends an abstract class have to give implementation to all the abstract methods of the superclass?
+{= Not necessarily if the sub class is going to be declared abstract.
+ ~ Yes-an abstract parent must have abstract children.
+ ~ No--an abstract parent mu have no children at all.
+ ~ Yes--all children of an abstract parent must be non-abstract.}
+
+  
+::4:: An abstract class in Java can be created using the keyword ____.
+{~ final
+ ~ interface
+ = abstract
+ ~ static}
+
+
+::5:: What is the output of the below Java program with an abstract class? 
+abstract class MathLibrary
+\{
+ static final float PI \= 3.1415f;
+\}
+public class AbstractClassTesting
+\{
+  public static void main(String[] args)
+  \{
+    System.out.println(MathLibrary.PI);
+  \}
+\}
+{~ No output
+ ~ Compiler error
+ = 3.1415
+ ~ None of the above}
+
+
+::6:: Which class is instantiable? Class A or Class B?
+abstract class A
+\{
+     
+\}
+ 
+class B extends A
+\{
+     
+\}
+{~ Class A 
+ = Class B}
+
+ 
+::7:: Can you create an object from an abstract class in Java?
+{~ Yes
+ = No}
+
+
+::8:: Choose a correct implementation of an Abstract class in the below Java code?
+{~ abstract class ClassA \{\}
+ ~ abstract class ClassB
+\{
+  abstract void method();
+\}
+~ abstract class ClassC
+\{
+  void method()
+  \{
+    System.out.print("Hello Abstract Class");
+  \}
+\}
+= All the above}
+
+
+::9:: An abstract class in Java usually contains one or more abstract ____.
+{~ constructors
+ = methods
+ ~ variables
+ ~ None}
+
+
+::10:: What is an abstract method?
+{~ Is any method in an abstract class.
+ ~ Is a method which cannot be inherited.
+ = A method which is not implemented. The implementation for this method needs to be done in a non abstract class which extends this class.
+ ~ Is a method in the child class that overrids a parent method.}
+
+
+::11:: Is the following program written correctly? If yes, what value “result” variable will hold if you run the program?
+abstract class Calculate
+\{
+    abstract int add(int a, int b);
+\} 
+public class MainClass
+\{
+    public static void main(String[] args)
+    \{
+        int result = new Calculate()
+        \{   
+            @Override
+            int add(int a, int b)
+            \{
+                return a+b;
+            \}
+        \}result.add(11010, 9225);
+    \}
+\}
+{~ No
+ = Yes, result \= 20235}
+
+
+::12:: Can an abstract class define both abstract methods and non-abstract methods?
+{= Yes--the child classes will inherit both
+ ~ Yes--but the child classes do not inherit the abstract methods
+ ~ No--it must have all abstract methods
+ ~ No--it must have all one or the other}
+
+ 
+::13:: Choose a correct statement about abstract classes?
+{~ An abstract class can extend a concrete class
+ ~ An abstract class can extend another abstract class
+ ~ An abstract class can implement any number of interfaces.
+ = All the above.}
+
+
+::14:: Below class ABC doesn’t have even a single abstract method, but it has been declared as abstract. Is it True?
+abstract class ABC
+\{
+    void firstMethod()
+    \{
+        System.out.println("First Method");
+    \}
+     
+    void secondMethod()
+    \{
+        System.out.println("Second Method");
+    \}
+\}
+{TRUE}
+
+
+::15:: One class has a method with two overloaded forms. One form is abstract and another one is concrete. Is it True?
+{TRUE}
